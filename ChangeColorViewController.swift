@@ -23,9 +23,6 @@ class ChangeColorViewController: UIViewController {
             index += 1
         }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override var prefersStatusBarHidden: Bool {
         return true
