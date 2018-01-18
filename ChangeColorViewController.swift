@@ -17,11 +17,13 @@ class ChangeColorViewController: UIViewController {
     @IBAction func changeColorButton(_ sender: Any) {
        self.view.backgroundColor = backgroundColors[index]
         
-        if index == backgroundColors.count - 1 {
-            index = 0
-        } else {
-            index += 1
-        }
+        index = (index + 1) % self.backgroundColors.count
+        
+//        if index == backgroundColors.count - 1 {
+//            index = 0
+//        } else {
+//            index += 1
+//        }
     }
     
     override var prefersStatusBarHidden: Bool {
