@@ -10,14 +10,9 @@ import UIKit
 
 class ChangeColorViewController: UIViewController {
     
-
-
-    
     @IBAction func changeColorButton(_ sender: UIButton) {
-        let check = CheckPixelViewController()
-        check.nextColorIndex()
+        self.view.backgroundColor = nextColor()
     }
-    
     
     override var prefersStatusBarHidden: Bool {
         return true
