@@ -13,6 +13,8 @@
 		8A695443200FD1F300BB98CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A695442200FD1F300BB98CF /* Assets.xcassets */; };
 		8A695446200FD1F300BB98CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A695444200FD1F300BB98CF /* LaunchScreen.storyboard */; };
 		8A69544E200FD46A00BB98CF /* ChangeColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */; };
+		8A7A435D20161A8C00656257 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A435C20161A8C00656257 /* Model.swift */; };
+		8A7A436020161C4400656257 /* CheckPixelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A435F20161C4400656257 /* CheckPixelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		8A695442200FD1F300BB98CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A695445200FD1F300BB98CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A695447200FD1F300BB98CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeColorViewController.swift; path = ../ChangeColorViewController.swift; sourceTree = "<group>"; };
+		8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColorViewController.swift; sourceTree = "<group>"; };
+		8A7A435C20161A8C00656257 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8A7A435F20161C4400656257 /* CheckPixelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPixelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				8A69543B200FD1F300BB98CF /* AppDelegate.swift */,
-				8A69543D200FD1F300BB98CF /* ViewController.swift */,
-				8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */,
+				8A7A435E20161BFD00656257 /* Controller */,
+				8A7A435B20161A5E00656257 /* Model */,
+				8A7A435920161A2600656257 /* View */,
 				8A69543F200FD1F300BB98CF /* Main.storyboard */,
 				8A695442200FD1F300BB98CF /* Assets.xcassets */,
 				8A695444200FD1F300BB98CF /* LaunchScreen.storyboard */,
 				8A695447200FD1F300BB98CF /* Info.plist */,
 			);
 			path = CheckMyPixel;
+			sourceTree = "<group>";
+		};
+		8A7A435920161A2600656257 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A69543D200FD1F300BB98CF /* ViewController.swift */,
+				8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A7A435B20161A5E00656257 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A7A435C20161A8C00656257 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A7A435E20161BFD00656257 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A7A435F20161C4400656257 /* CheckPixelViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A69543E200FD1F300BB98CF /* ViewController.swift in Sources */,
+				8A7A435D20161A8C00656257 /* Model.swift in Sources */,
 				8A69543C200FD1F300BB98CF /* AppDelegate.swift in Sources */,
 				8A69544E200FD46A00BB98CF /* ChangeColorViewController.swift in Sources */,
+				8A7A436020161C4400656257 /* CheckPixelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +318,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.CheckMyPixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -301,7 +333,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.CheckMyPixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
