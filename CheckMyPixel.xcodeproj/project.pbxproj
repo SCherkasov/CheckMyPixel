@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F524C86179684A704C2DE29 /* Pods_CheckMyPixel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C9418189D429698386BE1B /* Pods_CheckMyPixel.framework */; };
+		8A35276720167C0E00BA85C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A35276620167C0E00BA85C5 /* GoogleService-Info.plist */; };
 		8A69543C200FD1F300BB98CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A69543B200FD1F300BB98CF /* AppDelegate.swift */; };
 		8A69543E200FD1F300BB98CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A69543D200FD1F300BB98CF /* ViewController.swift */; };
 		8A695441200FD1F300BB98CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A69543F200FD1F300BB98CF /* Main.storyboard */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07C9418189D429698386BE1B /* Pods_CheckMyPixel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckMyPixel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D29812DCB4ED8EE07708CC6 /* Pods-CheckMyPixel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckMyPixel.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckMyPixel/Pods-CheckMyPixel.release.xcconfig"; sourceTree = "<group>"; };
+		8A35276620167C0E00BA85C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A695438200FD1F200BB98CF /* CheckMyPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckMyPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A69543B200FD1F300BB98CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A69543D200FD1F300BB98CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		8A695447200FD1F300BB98CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColorViewController.swift; sourceTree = "<group>"; };
 		8A7A435F20161C4400656257 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
+		FF221C19DEDF4F5CF841E694 /* Pods-CheckMyPixel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckMyPixel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckMyPixel/Pods-CheckMyPixel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F524C86179684A704C2DE29 /* Pods_CheckMyPixel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BE10CC29C19E6EEEE278E02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07C9418189D429698386BE1B /* Pods_CheckMyPixel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A69542F200FD1F200BB98CF = {
 			isa = PBXGroup;
 			children = (
 				8A69543A200FD1F300BB98CF /* CheckMyPixel */,
 				8A695439200FD1F200BB98CF /* Products */,
+				CF5D92570CE1FDB34CCBAD04 /* Pods */,
+				5BE10CC29C19E6EEEE278E02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +83,7 @@
 				8A695442200FD1F300BB98CF /* Assets.xcassets */,
 				8A695444200FD1F300BB98CF /* LaunchScreen.storyboard */,
 				8A695447200FD1F300BB98CF /* Info.plist */,
+				8A35276620167C0E00BA85C5 /* GoogleService-Info.plist */,
 			);
 			path = CheckMyPixel;
 			sourceTree = "<group>";
@@ -94,6 +112,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		CF5D92570CE1FDB34CCBAD04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF221C19DEDF4F5CF841E694 /* Pods-CheckMyPixel.debug.xcconfig */,
+				7D29812DCB4ED8EE07708CC6 /* Pods-CheckMyPixel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A69544A200FD1F300BB98CF /* Build configuration list for PBXNativeTarget "CheckMyPixel" */;
 			buildPhases = (
+				E382984F277D7E50AD4D4FFD /* [CP] Check Pods Manifest.lock */,
 				8A695434200FD1F200BB98CF /* Sources */,
 				8A695435200FD1F200BB98CF /* Frameworks */,
 				8A695436200FD1F200BB98CF /* Resources */,
+				6EF136D81AC6D94124726F3E /* [CP] Embed Pods Frameworks */,
+				F44DAE2146344AAF531627FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,12 +186,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A695446200FD1F300BB98CF /* LaunchScreen.storyboard in Resources */,
+				8A35276720167C0E00BA85C5 /* GoogleService-Info.plist in Resources */,
 				8A695443200FD1F300BB98CF /* Assets.xcassets in Resources */,
 				8A695441200FD1F300BB98CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EF136D81AC6D94124726F3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CheckMyPixel/Pods-CheckMyPixel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckMyPixel/Pods-CheckMyPixel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E382984F277D7E50AD4D4FFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckMyPixel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F44DAE2146344AAF531627FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckMyPixel/Pods-CheckMyPixel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A695434200FD1F200BB98CF /* Sources */ = {
@@ -306,11 +391,12 @@
 		};
 		8A69544B200FD1F300BB98CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF221C19DEDF4F5CF841E694 /* Pods-CheckMyPixel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HH9AF9DGX8;
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.CheckMyPixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -321,11 +407,12 @@
 		};
 		8A69544C200FD1F300BB98CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D29812DCB4ED8EE07708CC6 /* Pods-CheckMyPixel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HH9AF9DGX8;
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.CheckMyPixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";

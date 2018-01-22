@@ -35,14 +35,42 @@
                                     <segue destination="TKF-ut-8S1" kind="show" identifier="nextColor" id="Ryf-2i-KtF"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-QS-xBx" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2OO-00-Cx1"/>
+                                    <constraint firstAttribute="width" constant="320" id="3Sc-LH-3IV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrG-Ug-X3E" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aQA-CC-xQ2"/>
+                                    <constraint firstAttribute="width" constant="320" id="zAj-4g-IkQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AfB-V2-Ef0"/>
+                            <constraint firstItem="eRd-QS-xBx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GRk-Cf-IBl"/>
+                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PhS-Je-ybY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eRd-QS-xBx" secondAttribute="bottom" id="R1u-2U-arN"/>
+                            <constraint firstAttribute="trailing" secondItem="zrG-Ug-X3E" secondAttribute="trailing" id="VSN-UH-RCN"/>
+                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YWl-Qe-I8t"/>
+                            <constraint firstAttribute="trailing" secondItem="eRd-QS-xBx" secondAttribute="trailing" id="ZDv-Rt-meK"/>
                             <constraint firstItem="QAU-zP-g5A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g4B-Mo-Irg"/>
+                            <constraint firstItem="eRd-QS-xBx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oeG-27-8nM"/>
                             <constraint firstItem="QAU-zP-g5A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pUw-R7-r9b"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zff-za-uGz"/>
+                    <connections>
+                        <outlet property="bottomBanner" destination="eRd-QS-xBx" id="nq8-kt-uYS"/>
+                        <outlet property="topBanner" destination="zrG-Ug-X3E" id="z5f-Yn-fsN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
