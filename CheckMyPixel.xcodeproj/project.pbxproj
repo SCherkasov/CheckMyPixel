@@ -78,7 +78,6 @@
 				8A69543B200FD1F300BB98CF /* AppDelegate.swift */,
 				8A7A435E20161BFD00656257 /* Controller */,
 				8A7A435B20161A5E00656257 /* Model */,
-				8A7A435920161A2600656257 /* View */,
 				8A69543F200FD1F300BB98CF /* Main.storyboard */,
 				8A695442200FD1F300BB98CF /* Assets.xcassets */,
 				8A695444200FD1F300BB98CF /* LaunchScreen.storyboard */,
@@ -86,13 +85,6 @@
 				8A35276620167C0E00BA85C5 /* GoogleService-Info.plist */,
 			);
 			path = CheckMyPixel;
-			sourceTree = "<group>";
-		};
-		8A7A435920161A2600656257 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		8A7A435B20161A5E00656257 /* Model */ = {
@@ -156,7 +148,7 @@
 				TargetAttributes = {
 					8A695437200FD1F200BB98CF = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = HH9AF9DGX8;
+						DevelopmentTeam = 49DH34YDV8;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -203,10 +195,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CheckMyPixel/Pods-CheckMyPixel-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -394,7 +388,7 @@
 			baseConfigurationReference = FF221C19DEDF4F5CF841E694 /* Pods-CheckMyPixel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HH9AF9DGX8;
+				DEVELOPMENT_TEAM = 49DH34YDV8;
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -410,7 +404,7 @@
 			baseConfigurationReference = 7D29812DCB4ED8EE07708CC6 /* Pods-CheckMyPixel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HH9AF9DGX8;
+				DEVELOPMENT_TEAM = 49DH34YDV8;
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

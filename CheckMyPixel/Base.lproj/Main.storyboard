@@ -25,8 +25,8 @@
                                 <rect key="frame" x="85" y="209" width="150" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Gv1-Hk-hOS"/>
-                                    <constraint firstAttribute="height" constant="150" id="gyr-hq-JwU"/>
+                                    <constraint firstAttribute="width" constant="150" id="LtN-D1-coS"/>
+                                    <constraint firstAttribute="height" constant="150" id="Q4c-qb-10G"/>
                                 </constraints>
                                 <state key="normal" image="button">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -39,31 +39,29 @@
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="2OO-00-Cx1"/>
-                                    <constraint firstAttribute="width" constant="320" id="3Sc-LH-3IV"/>
+                                    <constraint firstAttribute="height" constant="50" id="1Nj-sv-Cxt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="C0W-Sy-DCc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="chX-b2-i1R"/>
+                                    <constraint firstAttribute="width" constant="320" id="yke-hc-Dfw"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrG-Ug-X3E" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="aQA-CC-xQ2"/>
-                                    <constraint firstAttribute="width" constant="320" id="zAj-4g-IkQ"/>
+                                    <constraint firstAttribute="width" constant="320" id="0yK-dF-Lkh"/>
+                                    <constraint firstAttribute="height" constant="50" id="BV8-q8-oeg"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AfB-V2-Ef0"/>
-                            <constraint firstItem="eRd-QS-xBx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GRk-Cf-IBl"/>
-                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PhS-Je-ybY"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eRd-QS-xBx" secondAttribute="bottom" id="R1u-2U-arN"/>
-                            <constraint firstAttribute="trailing" secondItem="zrG-Ug-X3E" secondAttribute="trailing" id="VSN-UH-RCN"/>
-                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YWl-Qe-I8t"/>
-                            <constraint firstAttribute="trailing" secondItem="eRd-QS-xBx" secondAttribute="trailing" id="ZDv-Rt-meK"/>
-                            <constraint firstItem="QAU-zP-g5A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g4B-Mo-Irg"/>
-                            <constraint firstItem="eRd-QS-xBx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oeG-27-8nM"/>
-                            <constraint firstItem="QAU-zP-g5A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pUw-R7-r9b"/>
+                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0KS-20-Whd"/>
+                            <constraint firstItem="QAU-zP-g5A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Jp-a6-vA3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eRd-QS-xBx" secondAttribute="bottom" id="4Mj-zV-Ntz"/>
+                            <constraint firstItem="eRd-QS-xBx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aG9-Rw-zOS"/>
+                            <constraint firstItem="QAU-zP-g5A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adX-pm-5YE"/>
+                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qYz-Za-11s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zff-za-uGz"/>
