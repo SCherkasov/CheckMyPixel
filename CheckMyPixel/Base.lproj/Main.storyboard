@@ -35,8 +35,16 @@
                                     <segue destination="TKF-ut-8S1" kind="show" identifier="nextColor" id="Ryf-2i-KtF"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrG-Ug-X3E" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="0yK-dF-Lkh"/>
+                                    <constraint firstAttribute="height" constant="50" id="BV8-q8-oeg"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-QS-xBx" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="498" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1Nj-sv-Cxt"/>
@@ -45,22 +53,14 @@
                                     <constraint firstAttribute="width" constant="320" id="yke-hc-Dfw"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrG-Ug-X3E" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="0yK-dF-Lkh"/>
-                                    <constraint firstAttribute="height" constant="50" id="BV8-q8-oeg"/>
-                                </constraints>
-                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0KS-20-Whd"/>
                             <constraint firstItem="QAU-zP-g5A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Jp-a6-vA3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eRd-QS-xBx" secondAttribute="bottom" id="4Mj-zV-Ntz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eRd-QS-xBx" secondAttribute="bottom" constant="20" id="4Mj-zV-Ntz"/>
                             <constraint firstItem="eRd-QS-xBx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aG9-Rw-zOS"/>
                             <constraint firstItem="QAU-zP-g5A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adX-pm-5YE"/>
+                            <constraint firstItem="zrG-Ug-X3E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mDg-xY-TTh"/>
                             <constraint firstItem="zrG-Ug-X3E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qYz-Za-11s"/>
                         </constraints>
                     </view>
