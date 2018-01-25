@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Sample AdMob app ID: ca-app-pub-3940256099942544~1458002511
         // TODO: register your application at ad mob, and add real Ids
         
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-1533289263767155~4384564818")
         
         // TODO: why do you need this? where did you read about it?
         //FirebaseApp.configure()
