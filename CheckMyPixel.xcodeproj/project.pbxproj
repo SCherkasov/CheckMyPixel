@@ -148,7 +148,7 @@
 				TargetAttributes = {
 					8A695437200FD1F200BB98CF = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 49DH34YDV8;
+						DevelopmentTeam = HH9AF9DGX8;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -388,11 +388,11 @@
 			baseConfigurationReference = FF221C19DEDF4F5CF841E694 /* Pods-CheckMyPixel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 49DH34YDV8;
+				DEVELOPMENT_TEAM = HH9AF9DGX8;
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SCherkasov.CheckMyPixel;
+				PRODUCT_BUNDLE_IDENTIFIER = home.SCherkasov.CheckMyPixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -404,11 +404,11 @@
 			baseConfigurationReference = 7D29812DCB4ED8EE07708CC6 /* Pods-CheckMyPixel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 49DH34YDV8;
+				DEVELOPMENT_TEAM = HH9AF9DGX8;
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SCherkasov.CheckMyPixel;
+				PRODUCT_BUNDLE_IDENTIFIER = home.SCherkasov.CheckMyPixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
