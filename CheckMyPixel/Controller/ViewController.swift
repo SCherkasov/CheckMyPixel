@@ -9,6 +9,8 @@
 import UIKit
 import GoogleMobileAds
 
+
+
 class ViewController: UIViewController, GADBannerViewDelegate {
 
     private static let topBannerId = "ca-app-pub-1533289263767155/2440927757"
@@ -19,6 +21,8 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         setupBanner(self.topBanner, with: ViewController.topBannerId)
         setupBanner(self.bottomBanner, with: ViewController.bottomBannerId)
