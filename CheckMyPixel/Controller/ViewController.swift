@@ -47,6 +47,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         return true
     }
     
+    //Animating a banner ad
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
         bannerView.alpha = 0
         UIView.animate(withDuration: 1, animations: {

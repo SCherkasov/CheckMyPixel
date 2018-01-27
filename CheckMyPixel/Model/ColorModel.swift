@@ -14,6 +14,6 @@ var index = 0
 
 func nextColor() -> UIColor {
     index = (index + 1) % backgroundColors.count
-    
+    print(index)
     return backgroundColors[index]
 }
