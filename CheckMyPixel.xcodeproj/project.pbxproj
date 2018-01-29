@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F524C86179684A704C2DE29 /* Pods_CheckMyPixel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C9418189D429698386BE1B /* Pods_CheckMyPixel.framework */; };
 		8A35276720167C0E00BA85C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A35276620167C0E00BA85C5 /* GoogleService-Info.plist */; };
+		8A54A635201FB2D600A47DB1 /* InstructionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A54A634201FB2D600A47DB1 /* InstructionPageViewController.swift */; };
 		8A69543C200FD1F300BB98CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A69543B200FD1F300BB98CF /* AppDelegate.swift */; };
 		8A69543E200FD1F300BB98CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A69543D200FD1F300BB98CF /* ViewController.swift */; };
 		8A695441200FD1F300BB98CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A69543F200FD1F300BB98CF /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		07C9418189D429698386BE1B /* Pods_CheckMyPixel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckMyPixel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D29812DCB4ED8EE07708CC6 /* Pods-CheckMyPixel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckMyPixel.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckMyPixel/Pods-CheckMyPixel.release.xcconfig"; sourceTree = "<group>"; };
 		8A35276620167C0E00BA85C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A54A634201FB2D600A47DB1 /* InstructionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionPageViewController.swift; sourceTree = "<group>"; };
 		8A695438200FD1F200BB98CF /* CheckMyPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckMyPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A69543B200FD1F300BB98CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A69543D200FD1F300BB98CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				8A69543D200FD1F300BB98CF /* ViewController.swift */,
 				8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */,
 				8A99262D201CA136005A0C9A /* PresentationViewController.swift */,
+				8A54A634201FB2D600A47DB1 /* InstructionPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				8A69543E200FD1F300BB98CF /* ViewController.swift in Sources */,
 				8A69543C200FD1F300BB98CF /* AppDelegate.swift in Sources */,
 				8A69544E200FD46A00BB98CF /* ChangeColorViewController.swift in Sources */,
+				8A54A635201FB2D600A47DB1 /* InstructionPageViewController.swift in Sources */,
 				8A7A436020161C4400656257 /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
