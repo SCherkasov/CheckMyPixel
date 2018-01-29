@@ -22,7 +22,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.navigationItem.setHidesBackButton(true, animated: false)
         
         setupBanner(self.topBanner, with: ViewController.topBannerId)
         setupBanner(self.bottomBanner, with: ViewController.bottomBannerId)

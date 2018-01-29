@@ -14,6 +14,11 @@ class ChangeColorViewController: UIViewController {
         self.view.backgroundColor = nextColor()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: false)
+    }
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
