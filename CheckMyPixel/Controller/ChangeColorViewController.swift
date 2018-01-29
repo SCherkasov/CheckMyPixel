@@ -19,6 +19,12 @@ class ChangeColorViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: false)
     }
     
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if event?.subtype == UIEventSubtype.motionShake {
+            performSegue(withIdentifier: "backSegue", sender: self)
+        }
+    }
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }

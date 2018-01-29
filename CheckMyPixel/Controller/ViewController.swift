@@ -12,7 +12,7 @@ import GoogleMobileAds
 
 
 class ViewController: UIViewController, GADBannerViewDelegate {
-
+    
     private static let topBannerId = "ca-app-pub-1533289263767155/2440927757"
     private static let bottomBannerId = "ca-app-pub-1533289263767155/8177304315"
     
@@ -36,7 +36,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         #else
             request.testDevices = ["0191f9df712cb7d8ab2f5c46643be47f"]
         #endif
-
+        
         return request
     }
     
