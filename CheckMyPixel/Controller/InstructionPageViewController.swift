@@ -9,7 +9,7 @@
 import UIKit
 
 class InstructionPageViewController: UIPageViewController, UIPageViewControllerDataSource {
-   
+    
     var pages = [UIViewController]()
     
     override func viewDidLayoutSubviews() {
@@ -22,10 +22,14 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
             }
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        createViewContr()
+    }
+    
+    func createViewContr() {
         let page1 = storyboard?.instantiateViewController(withIdentifier: "page1")
         let page2 = storyboard?.instantiateViewController(withIdentifier: "page2")
         let page3 = storyboard?.instantiateViewController(withIdentifier: "page3")
@@ -62,5 +66,5 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return 0
     }
-
+    
 }
