@@ -16,12 +16,17 @@ class PresentationViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        makeScrollAtImageView()
         
+        makeScrollAtImageView()
     }
+    
     func makeScrollAtImageView() {
+        
+        /*
         mainScroll.frame = view.frame
         presentationImages = [#imageLiteral(resourceName: "final_1_screen"), #imageLiteral(resourceName: "final_2_screen")]
+        
+        
         for i in 0..<presentationImages.count {
             let imageView = UIImageView()
             imageView.image = presentationImages[i]
@@ -33,8 +38,6 @@ class PresentationViewController: UIViewController, UIScrollViewDelegate {
             mainScroll.contentSize.width = mainScroll.frame.width * CGFloat(i + 1)
             mainScroll.addSubview(imageView)
         }
+ */
     }
-    //    override var prefersStatusBarHidden: Bool {
-    //        return true
-    //    }
 }

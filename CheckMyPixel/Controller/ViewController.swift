@@ -9,8 +9,6 @@
 import UIKit
 import GoogleMobileAds
 
-
-
 class ViewController: UIViewController, GADBannerViewDelegate {
     
     private static let topBannerId = "ca-app-pub-1533289263767155/2440927757"
