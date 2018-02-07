@@ -18,12 +18,13 @@
         <!--Instruction Page View Controller-->
         <scene sceneID="bEk-8Y-Q3h">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="9tb-G0-X8B" customClass="InstructionPageViewController" customModule="CheckMyPixel" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="InstructionPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="9tb-G0-X8B" customClass="InstructionPageViewController" customModule="CheckMyPixel" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="OqZ-8M-qdR">
                         <barButtonItem key="rightBarButtonItem" title="Skip" id="p2s-nL-WQd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="uM8-vE-uF8"/>
+                                <action selector="skipButton:" destination="9tb-G0-X8B" id="9GH-uT-SGj"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="skipSegue" id="uM8-vE-uF8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -206,7 +207,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheckMyPixel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerView" id="BYZ-38-t0r" customClass="ViewController" customModule="CheckMyPixel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

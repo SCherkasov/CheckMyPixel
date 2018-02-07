@@ -10,6 +10,14 @@ import UIKit
 
 class InstructionPageViewController: UIPageViewController, UIPageViewControllerDataSource {
     
+    @IBAction func skipButton(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "skipSegue", sender: self)
+        pages[0].view.isHidden = true
+        pages[1].view.isHidden = true
+        pages[2].view.isHidden = true
+        pages[3].view.isHidden = true
+    }
+    
     var pages = [UIViewController]()
     
     override func viewDidLayoutSubviews() {
@@ -26,6 +34,7 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        usingUserDef()
         setupUserGuidePages()
     }
     
@@ -71,4 +80,27 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return 0
     }
+    
+    func usingUserDef() {
+        if let IsTermsVisible = UserDefaults.standard.object(forKey: "ViewControllerView") as? Bool {
+            if IsTermsVisible == true {
+                pages[0].view.isHidden = true
+                pages[1].view.isHidden = true
+                pages[2].view.isHidden = true
+                pages[3].view.isHidden = true
+            } else {
+                pages[0].view.isHidden = false
+                pages[1].view.isHidden = false
+                pages[2].view.isHidden = false
+                pages[3].view.isHidden = false
+            }
+        } else {
+            pages[0].view.isHidden = false
+            pages[1].view.isHidden = false
+            pages[2].view.isHidden = false
+            pages[3].view.isHidden = false
+        }
+    }
+    
+    
 }
