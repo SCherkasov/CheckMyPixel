@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/c,swift,xcode,objective-c
 
 ### C ###
@@ -168,3 +167,6 @@ playground.xcworkspace
 
 
 # End of https://www.gitignore.io/api/c,swift,xcode,objective-c
+
+**/.DS_Store
+

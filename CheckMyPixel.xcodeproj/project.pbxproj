@@ -17,7 +17,6 @@
 		8A695446200FD1F300BB98CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A695444200FD1F300BB98CF /* LaunchScreen.storyboard */; };
 		8A69544E200FD46A00BB98CF /* ChangeColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */; };
 		8A7A436020161C4400656257 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A435F20161C4400656257 /* ColorModel.swift */; };
-		8A99262E201CA136005A0C9A /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99262D201CA136005A0C9A /* PresentationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		8A695447200FD1F300BB98CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColorViewController.swift; sourceTree = "<group>"; };
 		8A7A435F20161C4400656257 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
-		8A99262D201CA136005A0C9A /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		FF221C19DEDF4F5CF841E694 /* Pods-CheckMyPixel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckMyPixel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckMyPixel/Pods-CheckMyPixel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +102,6 @@
 			children = (
 				8A69543D200FD1F300BB98CF /* ViewController.swift */,
 				8A69544D200FD46A00BB98CF /* ChangeColorViewController.swift */,
-				8A99262D201CA136005A0C9A /* PresentationViewController.swift */,
 				8A54A634201FB2D600A47DB1 /* InstructionPageViewController.swift */,
 			);
 			path = Controller;
@@ -253,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A99262E201CA136005A0C9A /* PresentationViewController.swift in Sources */,
 				8A69543E200FD1F300BB98CF /* ViewController.swift in Sources */,
 				8A69543C200FD1F300BB98CF /* AppDelegate.swift in Sources */,
 				8A69544E200FD46A00BB98CF /* ChangeColorViewController.swift in Sources */,
