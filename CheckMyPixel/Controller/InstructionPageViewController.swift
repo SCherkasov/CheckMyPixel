@@ -50,11 +50,15 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
             
             self.showGuide = false
         } else {
+            skipInstuctions()
+            
+            /*
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "ViewController")
             
             if let controller = controller {
                 self.navigationController?.present(controller, animated: false, completion: {})
             }
+             */
         }
     }
     

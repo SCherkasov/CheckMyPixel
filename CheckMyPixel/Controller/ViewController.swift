@@ -10,9 +10,9 @@ import UIKit
 import GoogleMobileAds
 
 class ViewController: UIViewController, GADBannerViewDelegate {
-    
-    private static let topBannerId = "ca-app-pub-1533289263767155/2440927757"
-    private static let bottomBannerId = "ca-app-pub-1533289263767155/8177304315"
+    static let topBannerId = "ca-app-pub-1533289263767155/2440927757"
+    static let bottomBannerId = "ca-app-pub-1533289263767155/8177304315"
+    static let isTestingAdsModeKey = "isTestingAdsMode"
     
     @IBOutlet weak var bottomBanner: GADBannerView!
     @IBOutlet weak var topBanner: GADBannerView!
@@ -29,11 +29,16 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     func bannerRequest() -> GADRequest {
         let request = GADRequest()
         
-        #if (arch(i386) || arch(x86_64)) && os(iOS)
-            request.testDevices = [kGADSimulatorID]
-        #else
-            request.testDevices = ["0191f9df712cb7d8ab2f5c46643be47f"]
-        #endif
+        (Bundle.main.object(forInfoDictionaryKey: ViewController.isTestingAdsModeKey) as? Bool)
+            .map { isTestingAdsMode in
+                if isTestingAdsMode {
+                    #if (arch(i386) || arch(x86_64)) && os(iOS)
+                        request.testDevices = [kGADSimulatorID]
+                    #else
+                        request.testDevices = ["0191f9df712cb7d8ab2f5c46643be47f"]
+                    #endif
+            }
+        }
         
         return request
     }
