@@ -9,16 +9,22 @@
 import UIKit
 
 class InstructionPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+    static let IsApplicationFirstLaunchKey = "IsApplicationFirstLaunchKey"
     
     @IBAction func skipButton(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "skipSegue", sender: self)
-        pages[0].view.isHidden = true
-        pages[1].view.isHidden = true
-        pages[2].view.isHidden = true
-        pages[3].view.isHidden = true
     }
     
     var pages = [UIViewController]()
+    
+    var showGuide: Bool {
+        get {
+            return UserDefaults.standard.object(forKey: InstructionPageViewController.IsApplicationFirstLaunchKey) as? Bool ?? true
+            
+        } set {
+            UserDefaults.standard.set(newValue,
+                                      forKey: InstructionPageViewController.IsApplicationFirstLaunchKey)
+        }
+    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -34,8 +40,18 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        usingUserDef()
-        setupUserGuidePages()
+        if self.showGuide {
+            setupUserGuidePages()
+            
+            self.showGuide = false
+        } else {
+            
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "ViewController")
+            
+            if let controller = controller {
+                self.navigationController?.present(controller, animated: false, completion: {})
+            }
+        }
     }
     
     func setupUserGuidePages() {
@@ -80,27 +96,4 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return 0
     }
-    
-    func usingUserDef() {
-        if let IsTermsVisible = UserDefaults.standard.object(forKey: "ViewControllerView") as? Bool {
-            if IsTermsVisible == true {
-                pages[0].view.isHidden = true
-                pages[1].view.isHidden = true
-                pages[2].view.isHidden = true
-                pages[3].view.isHidden = true
-            } else {
-                pages[0].view.isHidden = false
-                pages[1].view.isHidden = false
-                pages[2].view.isHidden = false
-                pages[3].view.isHidden = false
-            }
-        } else {
-            pages[0].view.isHidden = false
-            pages[1].view.isHidden = false
-            pages[2].view.isHidden = false
-            pages[3].view.isHidden = false
-        }
-    }
-    
-    
 }

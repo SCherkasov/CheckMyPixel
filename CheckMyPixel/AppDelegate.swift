@@ -17,17 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
-        
         GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
         
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        
         UINavigationBar.appearance().shadowImage = UIImage()
-        
         UINavigationBar.appearance().backgroundColor = .clear
-        
         UINavigationBar.appearance().isTranslucent = true
-        
         
         return true
     }
