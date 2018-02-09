@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class ChangeColorViewController: UIViewController {
     
@@ -22,6 +23,8 @@ class ChangeColorViewController: UIViewController {
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if event?.subtype == UIEventSubtype.motionShake {
             performSegue(withIdentifier: "backSegue", sender: self)
+            
+            AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
         }
     }
     
