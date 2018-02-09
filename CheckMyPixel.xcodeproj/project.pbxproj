@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F524C86179684A704C2DE29 /* Pods_CheckMyPixel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C9418189D429698386BE1B /* Pods_CheckMyPixel.framework */; };
+		8A31336D202E303C00CEE26D /* Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A31336C202E303C00CEE26D /* Sound.mp3 */; };
 		8A35276720167C0E00BA85C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A35276620167C0E00BA85C5 /* GoogleService-Info.plist */; };
 		8A54A635201FB2D600A47DB1 /* InstructionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A54A634201FB2D600A47DB1 /* InstructionPageViewController.swift */; };
 		8A69543C200FD1F300BB98CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A69543B200FD1F300BB98CF /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		07C9418189D429698386BE1B /* Pods_CheckMyPixel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckMyPixel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D29812DCB4ED8EE07708CC6 /* Pods-CheckMyPixel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckMyPixel.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckMyPixel/Pods-CheckMyPixel.release.xcconfig"; sourceTree = "<group>"; };
+		8A31336C202E303C00CEE26D /* Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound.mp3; sourceTree = "<group>"; };
 		8A35276620167C0E00BA85C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A54A634201FB2D600A47DB1 /* InstructionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionPageViewController.swift; sourceTree = "<group>"; };
 		8A695438200FD1F200BB98CF /* CheckMyPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckMyPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				8A69543B200FD1F300BB98CF /* AppDelegate.swift */,
+				8A31336C202E303C00CEE26D /* Sound.mp3 */,
 				8A7A435E20161BFD00656257 /* Controller */,
 				8A7A435B20161A5E00656257 /* Model */,
 				8A69543F200FD1F300BB98CF /* Main.storyboard */,
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A695446200FD1F300BB98CF /* LaunchScreen.storyboard in Resources */,
+				8A31336D202E303C00CEE26D /* Sound.mp3 in Resources */,
 				8A35276720167C0E00BA85C5 /* GoogleService-Info.plist in Resources */,
 				8A695443200FD1F300BB98CF /* Assets.xcassets in Resources */,
 				8A695441200FD1F300BB98CF /* Main.storyboard in Resources */,

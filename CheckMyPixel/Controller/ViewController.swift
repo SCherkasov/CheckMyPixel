@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 import GoogleMobileAds
 
 class ViewController: UIViewController, GADBannerViewDelegate {
     static let topBannerId = "ca-app-pub-1533289263767155/2440927757"
     static let bottomBannerId = "ca-app-pub-1533289263767155/8177304315"
     static let isTestingAdsModeKey = "isTestingAdsMode"
+    
+    var buttonSound: AVAudioPlayer!
     
     @IBOutlet weak var bottomBanner: GADBannerView!
     @IBOutlet weak var topBanner: GADBannerView!
@@ -24,6 +27,8 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         
         setupBanner(self.topBanner, with: ViewController.topBannerId)
         setupBanner(self.bottomBanner, with: ViewController.bottomBannerId)
+        
+        clickButtonEffect()
     }
     
     func bannerRequest() -> GADRequest {
@@ -61,4 +66,19 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             bannerView.alpha = 1
         })
     }
+    @IBAction func startButton(_ sender: UIButton) {
+        buttonSound.play()
+    }
+    
+    //button sound effect
+    func clickButtonEffect() {
+        
+        let url = Bundle.main.url(forResource: "Sound", withExtension: "mp3")
+        do{
+            buttonSound = try AVAudioPlayer(contentsOf: url!)
+            buttonSound.prepareToPlay()
+        } catch let error as NSError {
+                print(error.debugDescription)
+            }
+        }
 }

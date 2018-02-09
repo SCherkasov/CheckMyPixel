@@ -227,6 +227,7 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7EW-HA-1XU"/>
                                     <segue destination="TKF-ut-8S1" kind="show" identifier="nextColor" id="Ryf-2i-KtF"/>
                                 </connections>
                             </button>
@@ -334,6 +335,7 @@
         <image name="finger_3" width="1386" height="1624"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Ryf-2i-KtF"/>
         <segue reference="knN-zJ-c7d"/>
     </inferredMetricsTieBreakers>
 </document>
