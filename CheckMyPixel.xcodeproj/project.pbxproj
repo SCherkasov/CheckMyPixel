@@ -400,7 +400,7 @@
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = home.SCherkasov.CheckMyPixel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SCherkasov.CheckMyPixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -416,7 +416,7 @@
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = home.SCherkasov.CheckMyPixel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SCherkasov.CheckMyPixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
