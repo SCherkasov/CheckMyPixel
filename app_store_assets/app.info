@@ -8,6 +8,9 @@ Check your display pixels
 # Keywords #
 pixelcheck,pixel,brokenpixel,test,testing,screen,display,broken
 
+# Support URL #
+https://github.com/SCherkasov/CheckMyPixel/issues
+
 ## General information ##
 # Bundle ID #
 com.SCherkasov.CheckMyPixel
@@ -28,3 +31,34 @@ CheckMyPixel runs a simple Display Check Tests for identifying broken pixel on a
 3) Tap on screen multiple times and spot any black or changing color pixels while screen is changing colors.
 
 If you have not spotted any black or changing colors pixels, different from the display color, you screen of great quality and you can be sure you do not have any broken pixels on it.
+
+## Apple Review Information ##
+# Contact Information #
+
+# Name #
+Stanislav
+
+# Last Name #
+Cherkasov
+
+# Phone #
++380503563498
+
+# E-Mail #
+scherkasov8@gmail.com
+
+## Content Rights ##
+# Does your app contain, display, or access third-party content? #
+No
+
+## Advertising Identifier ##
+# Does this app use the Advertising Identifier (IDFA)? #
+# The Advertising Identifier (IDFA) is a unique ID for each iOS device and is the only way to offer targeted ads. Users can choose to limit ad targeting on their iOS device. #
+# If your app is using the Advertising Identifier, check your code—including any third-party code—before you submit it to make sure that your app uses the Advertising Identifier only for the purposes listed below and respects the Limit Ad Tracking setting. If you include third-party code in your app, you are responsible for the behavior of such code, so be sure to check with your third-party provider to confirm compliance with the usage limitations of the Advertising Identifier and the Limit Ad Tracking setting. #
+# This app uses the Advertising Identifier to (select all that apply): #
+
+Serve advertisements within the app
+
+# Limit Ad Tracking setting in iOS
+
+I, ___,  confirm that this app, and any third party that interfaces with this app, uses the Advertising Identifier checks and honors a user's Limit Ad Tracking setting in iOS and, when it is enabled by a user, this app does not use Advertising Identifier, and any information obtained through the use of the Advertising Identifier, in any way other than for "Limited Advertising Purposes" as defined in the iOS Developer Program License Agreement. 
