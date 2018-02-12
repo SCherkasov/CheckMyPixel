@@ -1,0 +1,6 @@
+framework module Pods_CheckMyPixel {
+  umbrella header "Pods-CheckMyPixel-umbrella.h"
+
+  export *
+  module * { export * }
+}
