@@ -154,7 +154,7 @@
 				TargetAttributes = {
 					8A695437200FD1F200BB98CF = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = HH9AF9DGX8;
+						DevelopmentTeam = 49DH34YDV8;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -396,7 +396,7 @@
 			baseConfigurationReference = FF221C19DEDF4F5CF841E694 /* Pods-CheckMyPixel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HH9AF9DGX8;
+				DEVELOPMENT_TEAM = 49DH34YDV8;
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -412,7 +412,7 @@
 			baseConfigurationReference = 7D29812DCB4ED8EE07708CC6 /* Pods-CheckMyPixel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HH9AF9DGX8;
+				DEVELOPMENT_TEAM = 49DH34YDV8;
 				INFOPLIST_FILE = CheckMyPixel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

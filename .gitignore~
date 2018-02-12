@@ -168,13 +168,3 @@ playground.xcworkspace
 
 
 # End of https://www.gitignore.io/api/c,swift,xcode,objective-c
-
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
