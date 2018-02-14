@@ -330,12 +330,11 @@
     <resources>
         <image name="333" width="1200" height="1513"/>
         <image name="button" width="300" height="300"/>
-        <image name="finger_1" width="1386" height="1624"/>
-        <image name="finger_2" width="1386" height="1624"/>
-        <image name="finger_3" width="1386" height="1624"/>
+        <image name="finger_1" width="512" height="512"/>
+        <image name="finger_2" width="512" height="512"/>
+        <image name="finger_3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ryf-2i-KtF"/>
         <segue reference="knN-zJ-c7d"/>
     </inferredMetricsTieBreakers>
 </document>
