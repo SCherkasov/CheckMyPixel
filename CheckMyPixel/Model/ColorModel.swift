@@ -8,7 +8,14 @@
 
 import UIKit
 
-let backgroundColors = [UIColor.black, UIColor.red, UIColor.green, UIColor.blue, UIColor.white, UIColor.darkGray]
+let backgroundColors = [
+    UIColor.black,
+    UIColor.red,
+    UIColor.green,
+    UIColor.blue,
+    UIColor.white,
+    UIColor.darkGray
+]
 
 var index = 0
 

@@ -8,16 +8,26 @@
 
 import UIKit
 
-class InstructionPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+class InstructionPageViewController: UIPageViewController,
+    UIPageViewControllerDataSource,
+    UIPageViewControllerDelegate
+{
     static let IsApplicationFirstLaunchKey = "IsApplicationFirstLaunchKey"
     
-    @IBAction func skipButton(_ sender: UIBarButtonItem) {
-    }
+    static let TurnOnButtonIdentifier = "UserGuideTurnOnButton"
+    
+    @IBOutlet weak var actionButton: UIBarButtonItem!
     
     var pages = [UIViewController]()
+    var pageIndex: Int? {
+        didSet {
+            self.actionButton.title = self.actionButtonTitle(for: self.pageIndex)
+        }
+    }
     
     var showGuide: Bool {
         get {
+            return true
             return UserDefaults.standard.object(forKey: InstructionPageViewController.IsApplicationFirstLaunchKey) as? Bool ?? true
             
         } set {
@@ -40,6 +50,8 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.delegate = self
+        
         if self.showGuide {
             setupUserGuidePages()
             
@@ -54,23 +66,46 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
         }
     }
     
+    @objc
+    public func turnOnButtonTouched() {
+        self.setViewControllers([self.pages[1]], direction: .forward, animated: true, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        _ = self.pages
+            .map { $0.view.subviews }
+            .flatMap {
+                $0.map {
+                    if let button = $0 as? UIButton {
+                        button.addTarget(self,
+                                         action:#selector(turnOnButtonTouched),
+                                         for: .touchUpInside)
+                    }
+                }
+            }
+    }
+
     func setupUserGuidePages() {
         let addPageWithName = { (name: String) -> Void in
             if let board = self.storyboard {
                 self.pages.append(board.instantiateViewController(withIdentifier: name))
             }
         }
-        
-        addPageWithName("page1")
-        addPageWithName("page2")
-        addPageWithName("page3")
-        addPageWithName("page4")
+
+        _ = (1...4).map {
+            addPageWithName("page" + String.init(describing: $0))
+        }
         
         setViewControllers([pages[0]], direction: .forward, animated: true, completion: nil)
         
         dataSource = self
     }
+        
+    func actionButtonTitle(for index: Int?) -> String {
+        return index.map { $0 < self.pages.count - 1 ? "Skip" : "Start" } ?? ""
+    }
     
+    // MARK: - UIPageViewControllerDataSource
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {
         if let index = pages.index(of: viewController), index > 0 {
@@ -95,5 +130,23 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return 0
+    }
+    
+    // MARK: - UIPageViewControllerDelegate
+    var pendingViewController: UIViewController?
+    
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            willTransitionTo pendingViewControllers: [UIViewController]) {
+        self.pageIndex = nil
+        self.pendingViewController = pendingViewControllers[0]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            didFinishAnimating finished: Bool,
+                            previousViewControllers: [UIViewController],
+                            transitionCompleted completed: Bool)
+    {
+        self.pageIndex = (completed ? self.pendingViewController : previousViewControllers[0])
+            .flatMap { self.pages.index(of: $0) }
     }
 }
