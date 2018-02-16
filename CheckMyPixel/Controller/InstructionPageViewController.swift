@@ -27,7 +27,6 @@ class InstructionPageViewController: UIPageViewController,
     
     var showGuide: Bool {
         get {
-            return true
             return UserDefaults.standard.object(forKey: InstructionPageViewController.IsApplicationFirstLaunchKey) as? Bool ?? true
             
         } set {
