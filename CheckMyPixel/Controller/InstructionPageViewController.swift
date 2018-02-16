@@ -27,6 +27,7 @@ class InstructionPageViewController: UIPageViewController,
     
     var showGuide: Bool {
         get {
+            return true
             return UserDefaults.standard.object(forKey: InstructionPageViewController.IsApplicationFirstLaunchKey) as? Bool ?? true
             
         } set {
@@ -73,15 +74,15 @@ class InstructionPageViewController: UIPageViewController,
     override func viewWillAppear(_ animated: Bool) {
         _ = self.pages
             .map { $0.view.subviews }
-            .flatMap {
-                $0.map {
-                    if let button = $0 as? UIButton {
-                        button.addTarget(self,
-                                         action:#selector(turnOnButtonTouched),
-                                         for: .touchUpInside)
-                    }
-                }
-            }
+            .flatMap { $0 }
+            .filter { $0.restorationIdentifier == InstructionPageViewController.TurnOnButtonIdentifier }
+            .map { $0 as? UIButton }
+            .map {
+                $0?.addTarget(self,
+                              action:#selector(turnOnButtonTouched),
+                              for: .touchUpInside)
+                
+        }
     }
 
     func setupUserGuidePages() {
@@ -91,9 +92,7 @@ class InstructionPageViewController: UIPageViewController,
             }
         }
 
-        _ = (1...4).map {
-            addPageWithName("page" + String.init(describing: $0))
-        }
+        _ = (1...4).map { addPageWithName("page" + String.init(describing: $0)) }
         
         setViewControllers([pages[0]], direction: .forward, animated: true, completion: nil)
         
